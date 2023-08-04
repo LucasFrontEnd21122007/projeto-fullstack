@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  /* Estilo para a lista não ordenada */
+  #unordered-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #unordered-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Estilo para a lista ordenada */
+  #ordered-list {
+    counter-reset: item;
+  }
+  
+  #ordered-list li {
+    list-style: none;
+    counter-increment: item;
+    padding: 5px;
+    position: relative;
+  }
+  
+  #ordered-list li::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: -20px;
+  }
+  /* Estilo para a lista do Python */
+#python-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#python-list li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
